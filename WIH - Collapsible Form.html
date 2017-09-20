@@ -1,0 +1,23 @@
+<form ng-submit="server.update()" ng-if="!data.disabled || data.isValid" >
+  <div id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="card">
+      <div class="card-header" role="tab" id="headingOne">
+        <h4 class="mb-0">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Still Need Help? Click Here.
+          </a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+        <div class="card-block">
+  <div class="form-group">
+    <label for="contact"><h5>${Still need help? Tell us how we can contact you.}</h5></label>
+    <input type="text" ng-model="data.contact" class="form-control" rows="1" id="contact">
+    <label for="comment"><h5>${Tell us how we can help you.}</h5></label>
+    <textarea ng-model="data.comments" class="form-control" rows="2" id="comment"></textarea>
+    <input type="submit" id="submit" value="Submit" class="btn btn-primary" style="margin-top: 5px;" ng-disabled="!data.comments || !data.contact"/>
+  </div>
+</div>
+</div>
+</form>
+<div ng-if="data.response" class="alert alert-success"><a href='{{::data.response_link}}'>{{::data.response}}</a></div>
