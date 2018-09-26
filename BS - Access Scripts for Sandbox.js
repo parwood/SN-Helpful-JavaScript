@@ -153,13 +153,14 @@ while(gr.next()) {
 
 var rec = new GlideRecord('sys_user');
 rec.addQuery('active', 'true');
+rec.addQuery('u_is_manager', 'true')
 rec.query();
 while(rec.next()){
   //Create a new group relationship record for this user
   var rec1 = new GlideRecord('sys_user_grmember');
   rec1.initialize();
   rec1.user = rec.sys_id;
-  rec1.group.setDisplayValue('SN Sandbox Admin Group');
+  rec1.group.setDisplayValue('ServiceNow Rota Admins');
   rec1.insert();
   gs.log("updating roles " + rec.user_name);
 }
