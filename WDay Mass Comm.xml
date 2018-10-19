@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?><env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+<env:Body>
+  <wd:Report_Data xmlns:wd="urn:com.workday.report/INT040_-_ServiceNow_Integration">
+    <wd:Report_Entry>
+      <wd:employeeId>00000</wd:employeeId>
+      <wd:Preferred_Name_-_First_Name>Firsty</wd:Preferred_Name_-_First_Name>
+      <wd:Preferred_Name_-_Last_Name>Lasty</wd:Preferred_Name_-_Last_Name>
+      <wd:CF_TC_Contingent_Worker>Employee</wd:CF_TC_Contingent_Worker>
+      <wd:Primary_Work_Mobile_Phone wd:Descriptor="+1 (555) 555-1212">
+        <wd:ID wd:type="WID">65c67cd03500016ce54dff963fd210be</wd:ID>
+      </wd:Primary_Work_Mobile_Phone>
+      <wd:location wd:Descriptor="Building 4">
+        <wd:ID wd:type="WID">4f811d384710013483fd320930d0df99</wd:ID>
+        <wd:ID wd:type="Location_ID">1004</wd:ID>
+      </wd:location>
+      <wd:Custom_ID wd:Descriptor="XXXXX">
+        <wd:ID wd:type="WID">65c67cd0350001d3bc5e2c7b49d204c9</wd:ID></wd:Custom_ID>
+        <wd:CF_Primary_Home_Address_Line_1>1234 Sesame Street</wd:CF_Primary_Home_Address_Line_1>
+        <wd:Primary_Home_Address_-_City>City Name</wd:Primary_Home_Address_-_City>
+        <wd:Primary_Home_Address_-_State wd:Descriptor="Imagination">
+          <wd:ID wd:type="WID">de9b48948ef8421db97ddf4ea206e931</wd:ID>
+          <wd:ID wd:type="Country_Region_ID">USA-IM</wd:ID>
+          <wd:ID wd:type="ISO_3166-2_Code">IM</wd:ID>
+        </wd:Primary_Home_Address_-_State>
+        <wd:CF_Primary_Home_Zip_Code>12345</wd:CF_Primary_Home_Zip_Code>
+        <wd:CF_Country_Code>USA</wd:CF_Country_Code>
+        <wd:Phone_-_Primary_Home>+1 (555) 555-1212</wd:Phone_-_Primary_Home>
+        <wd:Mobile_Phone_Number>(555) 555-1212</wd:Mobile_Phone_Number>
+        <wd:Email_-_Primary_Home>email@address.com</wd:Email_-_Primary_Home>
+      </wd:Report_Entry>
+      <wd:Report_Entry>
+        <wd:employeeId>00000</wd:employeeId>
+        <wd:Preferred_Name_-_First_Name>Firsty</wd:Preferred_Name_-_First_Name>
+        <wd:Preferred_Name_-_Last_Name>Lasty</wd:Preferred_Name_-_Last_Name>
+        <wd:CF_TC_Contingent_Worker>Employee</wd:CF_TC_Contingent_Worker>
+        <wd:Primary_Work_Mobile_Phone wd:Descriptor="+1 (555) 555-1212">
+          <wd:ID wd:type="WID">65c67cd03500016ce54dff963fd210be</wd:ID>
+        </wd:Primary_Work_Mobile_Phone>
+        <wd:location wd:Descriptor="Building 4">
+          <wd:ID wd:type="WID">4f811d384710013483fd320930d0df99</wd:ID>
+          <wd:ID wd:type="Location_ID">1004</wd:ID>
+        </wd:location>
+        <wd:Custom_ID wd:Descriptor="XXXXX">
+          <wd:ID wd:type="WID">65c67cd0350001d3bc5e2c7b49d204c9</wd:ID></wd:Custom_ID>
+          <wd:CF_Primary_Home_Address_Line_1>1234 Sesame Street</wd:CF_Primary_Home_Address_Line_1>
+          <wd:Primary_Home_Address_-_City>City Name</wd:Primary_Home_Address_-_City>
+          <wd:Primary_Home_Address_-_State wd:Descriptor="Imagination">
+            <wd:ID wd:type="WID">de9b48948ef8421db97ddf4ea206e931</wd:ID>
+            <wd:ID wd:type="Country_Region_ID">USA-IM</wd:ID>
+            <wd:ID wd:type="ISO_3166-2_Code">IM</wd:ID>
+          </wd:Primary_Home_Address_-_State>
+          <wd:CF_Primary_Home_Zip_Code>12345</wd:CF_Primary_Home_Zip_Code>
+          <wd:CF_Country_Code>USA</wd:CF_Country_Code>
+          <wd:Phone_-_Primary_Home>+1 (555) 555-1212</wd:Phone_-_Primary_Home>
+          <wd:Mobile_Phone_Number>(555) 555-1212</wd:Mobile_Phone_Number>
+          <wd:Email_-_Primary_Home>email@address.com</wd:Email_-_Primary_Home>
+        </wd:Report_Entry>
+    </wd:Report_Data>
+  </env:Body>
+</env:Envelope>
