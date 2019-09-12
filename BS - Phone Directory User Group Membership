@@ -18,3 +18,24 @@ while (gr.next()){
     grMem.insert();
   }
 }
+
+var gr = new GlideRecord('core_company');
+gr.addEncodedQuery('nameSTARTSWITHIRM/^ORname=IRM');
+gr.query();
+
+while (gr.next()){
+
+  var user_change = new GlideRecord('sys_user');
+  user_change.addQuery('company', gr.sys_id);
+  user_change.query();
+
+  while (user_change.next()){
+    var group_sid = '8e803c44db64f7002d617e721f9619bc';
+
+    var grMem = new GlideRecord('sys_user_grmember');
+    grMem.initialize();
+    grMem.user = user_change.sys_id;
+    grMem.group = group_sid;
+    grMem.insert();
+  }
+}
